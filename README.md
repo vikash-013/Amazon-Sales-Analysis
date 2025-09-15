@@ -49,5 +49,5 @@ ax=sns.countplot(x='Size' ,data=df)
 
 for bars in ax.containers:
     ax.bar_label(bars)
-![Screenshot 2025-09-15 142322]( src="https://github.com/user-attachments/assets/22f21b3b-ef89-4ac2-ac33-2a612a29a70e)
+![Screenshot 2025-09-15 142322](https://github.com/vikash-013/Amazon-Sales-Analysis/blob/main/Screenshot%202025-09-15%20142322.png)
     
