@@ -50,5 +50,45 @@ ax=sns.countplot(x='Size' ,data=df)
 for bars in ax.containers:
     ax.bar_label(bars)
 ```
-![logo](https://github.com/vikash-013/Amazon-Sales-Analysis/blob/main/Screenshot%202025-09-15%20142322.png)
-    
+![logo](https://github.com/user-attachments/assets/a5b4ef28-3839-4f9f-aaee-0fb81ccd2e4e)
+
+```python
+plt.figure(figsize=(10,5))
+
+ax=sns.countplot(data=df, x='Courier Status',hue= 'Status')
+
+plt.show()
+
+```
+![logo](https://github.com/user-attachments/assets/80d90eba-d5f1-4f7f-a517-5793cfeb3f77)
+
+```python
+df['Category'] = df['Category'].astype(str)
+column_data = df['Category']
+plt.figure(figsize=(10, 5))
+plt.hist(column_data, bins=30, edgecolor='Black')
+plt.xticks(rotation=90)
+plt.show()
+
+````
+![logo](https://github.com/user-attachments/assets/4a29a339-a200-46b5-a62d-9ebc0dc8cccf)
+
+```python
+# top_10_States 
+top_10_state = df['ship-state'].value_counts().head(10)
+# Plot count of cities by state
+plt.figure(figsize=(12, 6))
+sns.countplot(data=df[df['ship-state'].isin(top_10_state.index)], x='ship-state')
+plt.xlabel('ship-state')
+plt.ylabel('count')
+plt.title('Distribution of  State')
+plt.xticks(rotation=45)
+plt.show()
+
+```
+![logo](https://github.com/user-attachments/assets/ec4b638c-e18a-4856-8f19-ed7700efdece)
+
+## Conclusion -
+
+The data analysis reveals that the business has a significant customer base in Maharashtra state, mainly serves retailers, fulfills orders through Amazon, experiences high demand for T-shirts, and sees M-Size as the preferred choice among buyers.
+
