@@ -1,6 +1,6 @@
 # **Amazon Sales Analysis 📺**  
 
-### 🚀 **Technologies Used:** Python | Jupyter Notebook | Pandas | NumPy  | Matplotlib |Seaborn
+### 🚀 **Technologies Used:** Python | Jupyter Notebook | Pandas | NumPy  | Matplotlib |Seaborn.
 
 ### **🔍 Overview**  
 This project analyzes **Amazon Sales** and viewing patterns to predict future content consumption trends. Using **Python** and libraries like **Pandas** and **NumPy**
